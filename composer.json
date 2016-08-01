@@ -1,0 +1,41 @@
+{
+  "name": "turboship/locations-php",
+  "description": "A PHP Wrapper For The TurboShip Locations API",
+  "keywords": [
+    "turboship",
+    "php",
+    "locations",
+    "turboship-locations",
+    "address validation"
+  ],
+  "license": "MIT",
+  "type": "library",
+  "homepage": "https://github.com/turboship/locations-php",
+  "authors":[
+    {
+      "name": "James Weston"
+    }
+  ],
+  "require": {
+    "jamesvweston/php-utilities": "dev-master",
+    "turboship/api-php": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "TurboShip\\Locations\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TurboShip\\Locations\\Tests\\": "tests"
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable" : true
+}

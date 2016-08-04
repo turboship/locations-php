@@ -14,6 +14,8 @@ class AddressApi extends BaseApi
      */
     public function verify($request = [])
     {
+        $this->tryValidation($request);
+        
         $data           = ($request instanceof VerifyAddressRequestContract) ? $request->jsonSerialize() : $request;
         $result         = $this->apiClient->post('/address/verify', $data);
         

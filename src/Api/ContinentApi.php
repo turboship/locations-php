@@ -17,6 +17,8 @@ class ContinentApi extends BaseApi
      */
     public function index($request = [])
     {
+        $this->tryValidation($request);
+        
         $data               = ($request instanceof GetContinentsRequestContract) ? $request->jsonSerialize() : $request;
         $result             = $this->apiClient->get('continents', $data);
         

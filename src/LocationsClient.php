@@ -9,7 +9,6 @@ use TurboShip\Locations\Api\ContinentApi;
 use TurboShip\Locations\Api\CountryApi;
 use TurboShip\Locations\Api\PostalDistrictApi;
 use TurboShip\Locations\Api\SubdivisionApi;
-use TurboShip\Locations\Api\SubdivisionTypeApi;
 
 class LocationsClient
 {
@@ -39,24 +38,20 @@ class LocationsClient
      */
     public $subdivisionApi;
 
-    /**
-     * @var SubdivisionTypeApi
-     */
-    public $subdivisionTypeApi;
     
     /**
      * LocationsClient constructor.
-     * @param $apiConfiguration
+     * @param   $apiConfiguration
+     * @param   bool    $validateRequests
      */
-    public function __construct($apiConfiguration)
+    public function __construct($apiConfiguration, $validateRequests = true)
     {
         $apiClient                  = new ApiClient($apiConfiguration);
         
-        $this->addressApi           = new AddressApi($apiClient);
-        $this->continentApi         = new ContinentApi($apiClient);
-        $this->countryApi           = new CountryApi($apiClient);
-        $this->postalDistrictApi    = new PostalDistrictApi($apiClient);
-        $this->subdivisionApi       = new SubdivisionApi($apiClient);
-        $this->subdivisionApi       = new SubdivisionTypeApi($apiClient);
+        $this->addressApi           = new AddressApi($apiClient, $validateRequests);
+        $this->continentApi         = new ContinentApi($apiClient, $validateRequests);
+        $this->countryApi           = new CountryApi($apiClient, $validateRequests);
+        $this->postalDistrictApi    = new PostalDistrictApi($apiClient, $validateRequests);
+        $this->subdivisionApi       = new SubdivisionApi($apiClient, $validateRequests);
     }
 }

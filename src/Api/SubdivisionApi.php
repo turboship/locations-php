@@ -5,7 +5,10 @@ namespace TurboShip\Locations\Api;
 
 use TurboShip\Location\Models\Subdivision;
 use TurboShip\Location\Models\SubdivisionAltName;
+use TurboShip\Location\Models\SubdivisionType;
 use TurboShip\Location\Requests\Subdivision\Contracts\GetSubdivisionsRequestContract;
+use TurboShip\Location\Requests\Subdivision\Contracts\GetSubdivisionTypesRequestContract;
+use TurboShip\Location\Requests\SubdivisionType\GetSubdivisionTypesResponse;
 use TurboShip\Location\Responses\Subdivision\GetSubdivisionsResponse;
 
 class SubdivisionApi extends BaseApi
@@ -17,6 +20,8 @@ class SubdivisionApi extends BaseApi
      */
     public function index($request = [])
     {
+        $this->tryValidation($request);
+        
         $data           = ($request instanceof GetSubdivisionsRequestContract) ? $request->jsonSerialize() : $request;
         $result         = $this->apiClient->get('subdivisions', $data);
         
@@ -50,5 +55,31 @@ class SubdivisionApi extends BaseApi
         }
 
         return $subdivisionAltNames;
+    }
+
+    /**
+     * @param   GetSubdivisionTypesRequestContract|array $request
+     * @return  GetSubdivisionTypesResponse
+     */
+    public function getSubdivisionTypes($request = [])
+    {
+        $this->tryValidation($request);
+        
+        $data           = ($request instanceof GetSubdivisionTypesRequestContract) ? $request->jsonSerialize() : $request;
+        $result         = $this->apiClient->get('/subdivisions/types', $data);
+
+        return new GetSubdivisionTypesResponse($result);
+    }
+
+    /**
+     * @param   int     $id
+     * @return  SubdivisionType
+     */
+    public function showSubdivisionType($id)
+    {
+        $result         = $this->apiClient->get('/subdivisions/types/' . $id);
+        $subdivisionType    = new SubdivisionType($result);
+
+        return $subdivisionType;
     }
 }

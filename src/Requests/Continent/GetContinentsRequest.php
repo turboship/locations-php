@@ -9,8 +9,9 @@ use TurboShip\Location\Requests\Continent\Contracts\GetContinentsRequestContract
 use TurboShip\Location\Requests\Traits\IdsPropertyTrait;
 use TurboShip\Location\Requests\Traits\NamesPropertyTrait;
 use TurboShip\Location\Requests\Traits\SymbolsPropertyTrait;
+use TurboShip\Locations\Requests\Validatable;
 
-class GetContinentsRequest extends BasePaginatableRequest implements GetContinentsRequestContract, \JsonSerializable
+class GetContinentsRequest extends BasePaginatableRequest implements GetContinentsRequestContract, Validatable, \JsonSerializable
 {
 
     use IdsPropertyTrait, NamesPropertyTrait, SymbolsPropertyTrait;
@@ -41,4 +42,10 @@ class GetContinentsRequest extends BasePaginatableRequest implements GetContinen
         return $object;
     }
     
+    
+    public function validate()
+    {
+        // TODO: Implement validate() method.
+    }
+
 }

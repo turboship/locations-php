@@ -10,8 +10,9 @@ use TurboShip\Location\Requests\Traits\CountryIdsPropertyTrait;
 use TurboShip\Location\Requests\Traits\IdsPropertyTrait;
 use TurboShip\Location\Requests\Traits\NamesPropertyTrait;
 use TurboShip\Location\Requests\Traits\SymbolsPropertyTrait;
+use TurboShip\Locations\Requests\Validatable;
 
-class GetPostalDistrictsRequest extends BasePaginatableRequest implements GetPostalDistrictsRequestContract, \JsonSerializable
+class GetPostalDistrictsRequest extends BasePaginatableRequest implements GetPostalDistrictsRequestContract, Validatable, \JsonSerializable
 {
 
     use IdsPropertyTrait, NamesPropertyTrait, SymbolsPropertyTrait, CountryIdsPropertyTrait;
@@ -43,4 +44,11 @@ class GetPostalDistrictsRequest extends BasePaginatableRequest implements GetPos
 
         return $object;
     }
+    
+    
+    public function validate()
+    {
+        // TODO: Implement validate() method.
+    }
+    
 }

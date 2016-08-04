@@ -8,8 +8,9 @@ use TurboShip\Location\Requests\BasePaginatableRequest;
 use TurboShip\Location\Requests\Country\Contracts\GetCountriesRequestContract;
 use TurboShip\Location\Requests\Traits\IdsPropertyTrait;
 use TurboShip\Location\Requests\Traits\NamesPropertyTrait;
+use TurboShip\Locations\Requests\Validatable;
 
-class GetCountriesRequest extends BasePaginatableRequest implements GetCountriesRequestContract, \JsonSerializable
+class GetCountriesRequest extends BasePaginatableRequest implements GetCountriesRequestContract, Validatable, \JsonSerializable
 {
 
     use IdsPropertyTrait, NamesPropertyTrait;
@@ -51,6 +52,12 @@ class GetCountriesRequest extends BasePaginatableRequest implements GetCountries
         $object                     = array_merge($object, parent::jsonSerialize());
 
         return $object;
+    }
+    
+    
+    public function validate()
+    {
+        // TODO: Implement validate() method.
     }
 
     /**

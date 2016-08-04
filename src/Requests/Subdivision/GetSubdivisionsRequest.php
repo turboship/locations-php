@@ -10,8 +10,9 @@ use TurboShip\Location\Requests\Traits\CountryIdsPropertyTrait;
 use TurboShip\Location\Requests\Traits\IdsPropertyTrait;
 use TurboShip\Location\Requests\Traits\NamesPropertyTrait;
 use TurboShip\Location\Requests\Traits\SymbolsPropertyTrait;
+use TurboShip\Locations\Requests\Validatable;
 
-class GetSubdivisionsRequest extends BasePaginatableRequest implements GetSubdivisionsRequestContract, \JsonSerializable
+class GetSubdivisionsRequest extends BasePaginatableRequest implements GetSubdivisionsRequestContract, Validatable, \JsonSerializable
 {
 
     use IdsPropertyTrait, NamesPropertyTrait, SymbolsPropertyTrait, CountryIdsPropertyTrait;
@@ -43,4 +44,10 @@ class GetSubdivisionsRequest extends BasePaginatableRequest implements GetSubdiv
 
         return $object;
     }
+    
+    public function validate()
+    {
+        // TODO: Implement validate() method.
+    }
+    
 }

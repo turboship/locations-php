@@ -1,13 +1,13 @@
 <?php
 
-namespace TurboShip\Location\Requests\Country;
+namespace TurboShip\Locations\Requests\Country;
 
 
 use jamesvweston\Utilities\ArrayUtil AS AU;
-use TurboShip\Location\Requests\BasePaginatableRequest;
-use TurboShip\Location\Requests\Country\Contracts\GetCountriesRequestContract;
-use TurboShip\Location\Requests\Traits\IdsPropertyTrait;
-use TurboShip\Location\Requests\Traits\NamesPropertyTrait;
+use TurboShip\Locations\Requests\BasePaginatableRequest;
+use TurboShip\Locations\Requests\Country\Contracts\GetCountriesRequestContract;
+use TurboShip\Locations\Requests\Traits\IdsPropertyTrait;
+use TurboShip\Locations\Requests\Traits\NamesPropertyTrait;
 use TurboShip\Locations\Requests\Validatable;
 
 class GetCountriesRequest extends BasePaginatableRequest implements GetCountriesRequestContract, Validatable, \JsonSerializable

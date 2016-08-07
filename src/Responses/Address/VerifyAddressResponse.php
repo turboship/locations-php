@@ -1,9 +1,9 @@
 <?php
 
-namespace TurboShip\Location\Responses\Address;
+namespace TurboShip\Locations\Responses\Address;
 
 
-use TurboShip\Location\Responses\Address\Contracts\VerifyAddressResponseContract;
+use TurboShip\Locations\Responses\Address\Contracts\VerifyAddressResponseContract;
 
 class VerifyAddressResponse implements VerifyAddressResponseContract
 {

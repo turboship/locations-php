@@ -1,6 +1,6 @@
 <?php
 
-namespace TurboShip\Location\Requests\Address\Contract;
+namespace TurboShip\Locations\Requests\Address\Contract;
 
 
 interface VerifyAddressRequestContract

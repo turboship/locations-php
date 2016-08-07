@@ -1,6 +1,6 @@
 <?php
 
-namespace TurboShip\Location\Models\Contracts;
+namespace TurboShip\Locations\Models\Contracts;
 
 
 interface SubdivisionTypeContract

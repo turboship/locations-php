@@ -1,9 +1,9 @@
 <?php
 
-namespace TurboShip\Location\Models;
+namespace TurboShip\Locations\Models;
 
 
-use TurboShip\Location\Models\Contracts\AddressContract;
+use TurboShip\Locations\Models\Contracts\AddressContract;
 use jamesvweston\Utilities\ArrayUtil AS AU;
 
 class Address extends StreetAddress implements AddressContract, \JsonSerializable

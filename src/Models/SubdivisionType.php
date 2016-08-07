@@ -1,10 +1,10 @@
 <?php
 
-namespace TurboShip\Location\Models;
+namespace TurboShip\Locations\Models;
 
 
 use jamesvweston\Utilities\ArrayUtil AS AU;
-use TurboShip\Location\Models\Contracts\SubdivisionTypeContract;
+use TurboShip\Locations\Models\Contracts\SubdivisionTypeContract;
 
 class SubdivisionType implements SubdivisionTypeContract, \JsonSerializable
 {

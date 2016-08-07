@@ -3,13 +3,13 @@
 namespace TurboShip\Locations\Api;
 
 
-use TurboShip\Location\Models\Subdivision;
-use TurboShip\Location\Models\SubdivisionAltName;
-use TurboShip\Location\Models\SubdivisionType;
-use TurboShip\Location\Requests\Subdivision\Contracts\GetSubdivisionsRequestContract;
-use TurboShip\Location\Requests\Subdivision\Contracts\GetSubdivisionTypesRequestContract;
-use TurboShip\Location\Requests\SubdivisionType\GetSubdivisionTypesResponse;
-use TurboShip\Location\Responses\Subdivision\GetSubdivisionsResponse;
+use TurboShip\Locations\Models\Subdivision;
+use TurboShip\Locations\Models\SubdivisionAltName;
+use TurboShip\Locations\Models\SubdivisionType;
+use TurboShip\Locations\Requests\Subdivision\Contracts\GetSubdivisionsRequestContract;
+use TurboShip\Locations\Requests\Subdivision\Contracts\GetSubdivisionTypesRequestContract;
+use TurboShip\Locations\Requests\SubdivisionType\GetSubdivisionTypesResponse;
+use TurboShip\Locations\Responses\Subdivision\GetSubdivisionsResponse;
 
 class SubdivisionApi extends BaseApi
 {

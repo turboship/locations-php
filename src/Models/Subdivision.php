@@ -1,11 +1,11 @@
 <?php
 
-namespace TurboShip\Location\Models;
+namespace TurboShip\Locations\Models;
 
 use jamesvweston\Utilities\ArrayUtil AS AU;
-use TurboShip\Location\Models\Contracts\SubdivisionContract;
-use TurboShip\Location\Models\Traits\CountryPropertyTrait;
-use TurboShip\Location\Models\Traits\SubdivisionTypePropertyTrait;
+use TurboShip\Locations\Models\Contracts\SubdivisionContract;
+use TurboShip\Locations\Models\Traits\CountryPropertyTrait;
+use TurboShip\Locations\Models\Traits\SubdivisionTypePropertyTrait;
 
 class Subdivision implements SubdivisionContract, \JsonSerializable
 {

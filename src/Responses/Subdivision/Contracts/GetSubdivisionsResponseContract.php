@@ -1,6 +1,6 @@
 <?php
 
-namespace TurboShip\Location\Responses\Subdivision\Contracts;
+namespace TurboShip\Locations\Responses\Subdivision\Contracts;
 
 
 interface GetSubdivisionsResponseContract

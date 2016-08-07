@@ -1,11 +1,11 @@
 <?php
 
-namespace TurboShip\Location\Responses\PostalDistrict;
+namespace TurboShip\Locations\Responses\PostalDistrict;
 
 
-use TurboShip\Location\Models\PostalDistrict;
-use TurboShip\Location\Responses\BasePaginatedResponse;
-use TurboShip\Location\Responses\PostalDistrict\Contracts\GetPostalDistrictsResponseContract;
+use TurboShip\Locations\Models\PostalDistrict;
+use TurboShip\Locations\Responses\BasePaginatedResponse;
+use TurboShip\Locations\Responses\PostalDistrict\Contracts\GetPostalDistrictsResponseContract;
 
 class GetPostalDistrictsResponse extends BasePaginatedResponse implements GetPostalDistrictsResponseContract
 {

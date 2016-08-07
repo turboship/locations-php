@@ -1,6 +1,6 @@
 <?php
 
-namespace TurboShip\Location\Responses;
+namespace TurboShip\Locations\Responses;
 
 
 interface PaginatedResponseContract

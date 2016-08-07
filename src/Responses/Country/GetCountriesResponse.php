@@ -1,11 +1,11 @@
 <?php
 
-namespace TurboShip\Location\Responses\Country;
+namespace TurboShip\Locations\Responses\Country;
 
 
-use TurboShip\Location\Models\Country;
-use TurboShip\Location\Responses\BasePaginatedResponse;
-use TurboShip\Location\Responses\Country\Contracts\GetCountriesResponseContract;
+use TurboShip\Locations\Models\Country;
+use TurboShip\Locations\Responses\BasePaginatedResponse;
+use TurboShip\Locations\Responses\Country\Contracts\GetCountriesResponseContract;
 
 class GetCountriesResponse extends BasePaginatedResponse implements GetCountriesResponseContract
 {

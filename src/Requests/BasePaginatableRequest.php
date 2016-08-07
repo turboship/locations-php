@@ -1,10 +1,10 @@
 <?php
 
-namespace TurboShip\Location\Requests;
+namespace TurboShip\Locations\Requests;
 
 
 use jamesvweston\Utilities\ArrayUtil AS AU;
-use TurboShip\Location\Requests\Contracts\PaginatableRequestContract;
+use TurboShip\Locations\Requests\Contracts\PaginatableRequestContract;
 
 class BasePaginatableRequest implements PaginatableRequestContract, \JsonSerializable
 {

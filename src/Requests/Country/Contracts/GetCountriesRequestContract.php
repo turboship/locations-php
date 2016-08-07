@@ -1,6 +1,6 @@
 <?php
 
-namespace TurboShip\Location\Requests\Country\Contracts;
+namespace TurboShip\Locations\Requests\Country\Contracts;
 
 
 interface GetCountriesRequestContract

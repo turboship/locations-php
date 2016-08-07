@@ -1,6 +1,6 @@
 <?php
 
-namespace TurboShip\Location\Responses\PostalDistrict\Contracts;
+namespace TurboShip\Locations\Responses\PostalDistrict\Contracts;
 
 
 interface GetPostalDistrictsResponseContract

@@ -3,10 +3,10 @@
 namespace TurboShip\Locations\Api;
 
 
-use TurboShip\Location\Models\Continent;
-use TurboShip\Location\Models\Country;
-use TurboShip\Location\Requests\Continent\Contracts\GetContinentsRequestContract;
-use TurboShip\Location\Responses\Continent\GetContinentsResponse;
+use TurboShip\Locations\Models\Continent;
+use TurboShip\Locations\Models\Country;
+use TurboShip\Locations\Requests\Continent\Contracts\GetContinentsRequestContract;
+use TurboShip\Locations\Responses\Continent\GetContinentsResponse;
 
 class ContinentApi extends BaseApi
 {

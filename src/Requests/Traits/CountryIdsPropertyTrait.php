@@ -1,6 +1,6 @@
 <?php
 
-namespace TurboShip\Location\Requests\Traits;
+namespace TurboShip\Locations\Requests\Traits;
 
 
 trait CountryIdsPropertyTrait

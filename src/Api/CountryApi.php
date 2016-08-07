@@ -3,11 +3,11 @@
 namespace TurboShip\Locations\Api;
 
 
-use TurboShip\Location\Models\Country;
-use TurboShip\Location\Models\PostalDistrict;
-use TurboShip\Location\Models\Subdivision;
-use TurboShip\Location\Requests\Country\Contracts\GetCountriesRequestContract;
-use TurboShip\Location\Responses\Country\GetCountriesResponse;
+use TurboShip\Locations\Models\Country;
+use TurboShip\Locations\Models\PostalDistrict;
+use TurboShip\Locations\Models\Subdivision;
+use TurboShip\Locations\Requests\Country\Contracts\GetCountriesRequestContract;
+use TurboShip\Locations\Responses\Country\GetCountriesResponse;
 
 class CountryApi extends BaseApi
 {

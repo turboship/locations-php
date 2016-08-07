@@ -1,9 +1,9 @@
 <?php
 
-namespace TurboShip\Location\Models\Traits;
+namespace TurboShip\Locations\Models\Traits;
 
 
-use TurboShip\Location\Models\Country;
+use TurboShip\Locations\Models\Country;
 
 trait CountryPropertyTrait
 {

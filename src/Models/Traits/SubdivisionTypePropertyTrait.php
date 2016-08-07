@@ -1,9 +1,9 @@
 <?php
 
-namespace TurboShip\Location\Models\Traits;
+namespace TurboShip\Locations\Models\Traits;
 
 
-use TurboShip\Location\Models\SubdivisionType;
+use TurboShip\Locations\Models\SubdivisionType;
 
 trait SubdivisionTypePropertyTrait
 {

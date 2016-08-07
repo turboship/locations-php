@@ -1,10 +1,10 @@
 <?php
 
-namespace TurboShip\Location\Models;
+namespace TurboShip\Locations\Models;
 
 
-use TurboShip\Location\Models\Contracts\SubdivisionAltNameContract;
-use TurboShip\Location\Models\Traits\SubdivisionPropertyTrait;
+use TurboShip\Locations\Models\Contracts\SubdivisionAltNameContract;
+use TurboShip\Locations\Models\Traits\SubdivisionPropertyTrait;
 use jamesvweston\Utilities\ArrayUtil AS AU;
 
 class SubdivisionAltName implements SubdivisionAltNameContract, \JsonSerializable

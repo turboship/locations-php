@@ -1,6 +1,6 @@
 <?php
 
-namespace TurboShip\Location\Requests\Contracts;
+namespace TurboShip\Locations\Requests\Contracts;
 
 
 interface PaginatableRequestContract

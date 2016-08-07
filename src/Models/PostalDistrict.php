@@ -1,11 +1,11 @@
 <?php
 
-namespace TurboShip\Location\Models;
+namespace TurboShip\Locations\Models;
 
 
 use jamesvweston\Utilities\ArrayUtil AS AU;
-use TurboShip\Location\Models\Contracts\PostalDistrictContract;
-use TurboShip\Location\Models\Traits\CountryPropertyTrait;
+use TurboShip\Locations\Models\Contracts\PostalDistrictContract;
+use TurboShip\Locations\Models\Traits\CountryPropertyTrait;
 
 class PostalDistrict implements PostalDistrictContract, \JsonSerializable
 {

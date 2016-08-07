@@ -1,11 +1,11 @@
 <?php
 
-namespace TurboShip\Location\Models;
+namespace TurboShip\Locations\Models;
 
 
-use TurboShip\Location\Models\Contracts\CountryContract;
+use TurboShip\Locations\Models\Contracts\CountryContract;
 use jamesvweston\Utilities\ArrayUtil AS AU;
-use TurboShip\Location\Models\Traits\ContinentPropertyTrait;
+use TurboShip\Locations\Models\Traits\ContinentPropertyTrait;
 
 class Country implements CountryContract, \JsonSerializable
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace TurboShip\Location\Requests\Subdivision;
+namespace TurboShip\Locations\Requests\Subdivision;
 
 
 use jamesvweston\Utilities\ArrayUtil AS AU;
-use TurboShip\Location\Requests\BasePaginatableRequest;
-use TurboShip\Location\Requests\Subdivision\Contracts\GetSubdivisionsRequestContract;
-use TurboShip\Location\Requests\Traits\CountryIdsPropertyTrait;
-use TurboShip\Location\Requests\Traits\IdsPropertyTrait;
-use TurboShip\Location\Requests\Traits\NamesPropertyTrait;
-use TurboShip\Location\Requests\Traits\SymbolsPropertyTrait;
+use TurboShip\Locations\Requests\BasePaginatableRequest;
+use TurboShip\Locations\Requests\Subdivision\Contracts\GetSubdivisionsRequestContract;
+use TurboShip\Locations\Requests\Traits\CountryIdsPropertyTrait;
+use TurboShip\Locations\Requests\Traits\IdsPropertyTrait;
+use TurboShip\Locations\Requests\Traits\NamesPropertyTrait;
+use TurboShip\Locations\Requests\Traits\SymbolsPropertyTrait;
 use TurboShip\Locations\Requests\Validatable;
 
 class GetSubdivisionsRequest extends BasePaginatableRequest implements GetSubdivisionsRequestContract, Validatable, \JsonSerializable

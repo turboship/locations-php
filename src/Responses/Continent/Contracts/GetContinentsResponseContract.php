@@ -1,6 +1,6 @@
 <?php
 
-namespace TurboShip\Location\Responses\Continent\Contracts;
+namespace TurboShip\Locations\Responses\Continent\Contracts;
 
 
 interface GetContinentsResponseContract

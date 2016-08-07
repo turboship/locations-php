@@ -1,9 +1,9 @@
 <?php
 
-namespace TurboShip\Location\Models;
+namespace TurboShip\Locations\Models;
 
 use jamesvweston\Utilities\ArrayUtil AS AU;
-use TurboShip\Location\Models\Contracts\ContinentContract;
+use TurboShip\Locations\Models\Contracts\ContinentContract;
 
 class Continent implements ContinentContract, \JsonSerializable
 {

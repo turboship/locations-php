@@ -1,11 +1,11 @@
 <?php
 
-namespace TurboShip\Location\Responses\Subdivision;
+namespace TurboShip\Locations\Responses\Subdivision;
 
 
-use TurboShip\Location\Models\Subdivision;
-use TurboShip\Location\Responses\BasePaginatedResponse;
-use TurboShip\Location\Responses\Subdivision\Contracts\GetSubdivisionsResponseContract;
+use TurboShip\Locations\Models\Subdivision;
+use TurboShip\Locations\Responses\BasePaginatedResponse;
+use TurboShip\Locations\Responses\Subdivision\Contracts\GetSubdivisionsResponseContract;
 
 class GetSubdivisionsResponse extends BasePaginatedResponse implements GetSubdivisionsResponseContract
 {

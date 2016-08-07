@@ -3,10 +3,10 @@
 namespace TurboShip\Locations\Api;
 
 
-use TurboShip\Location\Models\PostalDistrict;
-use TurboShip\Location\Models\Subdivision;
-use TurboShip\Location\Requests\PostalDistrict\Contracts\GetPostalDistrictsRequestContract;
-use TurboShip\Location\Responses\PostalDistrict\GetPostalDistrictsResponse;
+use TurboShip\Locations\Models\PostalDistrict;
+use TurboShip\Locations\Models\Subdivision;
+use TurboShip\Locations\Requests\PostalDistrict\Contracts\GetPostalDistrictsRequestContract;
+use TurboShip\Locations\Responses\PostalDistrict\GetPostalDistrictsResponse;
 
 class PostalDistrictApi extends BaseApi
 {

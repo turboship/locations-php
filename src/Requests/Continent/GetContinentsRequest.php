@@ -1,14 +1,14 @@
 <?php
 
-namespace TurboShip\Location\Requests\Continent;
+namespace TurboShip\Locations\Requests\Continent;
 
 
 use jamesvweston\Utilities\ArrayUtil AS AU;
-use TurboShip\Location\Requests\BasePaginatableRequest;
-use TurboShip\Location\Requests\Continent\Contracts\GetContinentsRequestContract;
-use TurboShip\Location\Requests\Traits\IdsPropertyTrait;
-use TurboShip\Location\Requests\Traits\NamesPropertyTrait;
-use TurboShip\Location\Requests\Traits\SymbolsPropertyTrait;
+use TurboShip\Locations\Requests\BasePaginatableRequest;
+use TurboShip\Locations\Requests\Continent\Contracts\GetContinentsRequestContract;
+use TurboShip\Locations\Requests\Traits\IdsPropertyTrait;
+use TurboShip\Locations\Requests\Traits\NamesPropertyTrait;
+use TurboShip\Locations\Requests\Traits\SymbolsPropertyTrait;
 use TurboShip\Locations\Requests\Validatable;
 
 class GetContinentsRequest extends BasePaginatableRequest implements GetContinentsRequestContract, Validatable, \JsonSerializable

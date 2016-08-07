@@ -3,7 +3,7 @@
 namespace TurboShip\Locations\Api;
 
 
-use TurboShip\Location\Requests\Address\Contract\VerifyAddressRequestContract;
+use TurboShip\Locations\Requests\Address\Contract\VerifyAddressRequestContract;
 
 class AddressApi extends BaseApi
 {
